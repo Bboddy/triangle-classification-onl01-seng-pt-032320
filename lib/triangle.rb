@@ -15,7 +15,7 @@ class Triangle
   def kind
     if (side1 + side2) <= side3 || (side2 + side3) <= side1 || (side1 + side3) <= side2
       raise TriangleError
-    elsif (side1)
+    elsif side1 * side2 * side3 == 0
     elsif side1 == side2 && side1 == side3
       :equilateral
     elsif side1 == side2 || side1 == side3 || side2 == side3
